@@ -252,6 +252,23 @@ main {
     margin-right: auto;
 }
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.8rem;
+    border-radius: 10px;
+    background-color: var(--color-text-light);
+    color: var(--color-body-bg);
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
 
 /* Small desktop and larger */
 @media screen and (min-width: 992px) {
