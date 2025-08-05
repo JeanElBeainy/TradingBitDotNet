@@ -384,6 +384,15 @@ main {
     font-size: 1.6rem;
 }
 
+.section-cta {
+    text-align: center;
+}
+.section-cta .btn {
+    margin-top: 3rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+}
+
 @media screen and (min-width: 801px) and (max-width: 1550px) {
     .info__grid {
         grid-template-columns: repeat(2, 330px);
