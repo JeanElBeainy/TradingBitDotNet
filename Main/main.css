@@ -1,0 +1,43 @@
+:root {
+    --color-primary: #00d4ff;
+    --color-body-bg: #0d0e14;
+    --color-text: #b1b1b1;
+    --color-text-light: #ffffff;
+    --color-border: #222;
+    --color-component-bg: rgba(255, 255, 255, 0.05);
+    --color-component-border: rgba(255, 255, 255, 0.1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-body-bg);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem; /* Default font size */
+    line-height: 1.6;
+    color: var(--color-text);
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
