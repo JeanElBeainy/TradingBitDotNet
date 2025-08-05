@@ -336,6 +336,55 @@ main {
     
 }
 
+/* Info Section */
+.grid__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 300px;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.info__item {
+    text-align: center;
+    background: var(--color-component-bg);
+    border: 1px solid var(--color-component-border);
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.info__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.info__item__header {
+    padding: 2rem;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, var(--color-primary), transparent) 1;
+    box-shadow: 0 1px 10px rgba(0, 212, 255, 0.5);
+    animation: borderGlow 2s ease-in-out infinite alternate;
+}
+
+.info__item__header h2 {
+    font-size: 2.2rem;
+    color: var(--color-text-light);
+}
+
+.info__item__body {
+    padding: 3rem 2rem;
+    font-size: 1.6rem;
+}
+
+
 @media screen and (max-width: 500px) {
 
     .stats__number {
