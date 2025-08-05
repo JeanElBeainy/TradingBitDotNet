@@ -270,6 +270,55 @@ main {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
+/* Stats Section */
+.stats__grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, min(20%, 250px));
+    grid-template-rows: 200px;
+    gap: 3rem;
+}
+
+.stats__item {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--color-component-bg);
+    border-radius: 16px;
+    border: 1px solid var(--color-component-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.stats__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.stats__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    animation: shimmer 3s infinite;
+}
+
+.stats__number {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    text-shadow: 0 2px 15px rgba(0, 212, 255, 0.4);
+    margin-bottom: 3rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+}
+
 /* Small desktop and larger */
 @media screen and (min-width: 992px) {
     .nav__item {
