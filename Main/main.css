@@ -174,3 +174,43 @@ main {
     filter: drop-shadow(10px 10px 20px rgba(0, 212, 255, 0.3));
     animation: leftToRight 1.7s ease-in-out;
 }
+
+/* --- MEDIA QUERIES (RESPONSIVENESS) --- */
+
+/* Tablet and larger */
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: 0;
+        padding: 1rem 1.5rem;
+    }
+    
+
+}
+
+/* Small desktop and larger */
+@media screen and (min-width: 992px) {
+    .nav__item {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Mobile specific adjustments */
+@media screen and (max-width: 767px) {
+    .nav {
+        margin: 0 1rem;
+        border-radius: 15px;
+    }
+
+}
