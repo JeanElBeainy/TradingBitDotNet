@@ -475,7 +475,16 @@ main {
     .hero__image-container {
         flex: 1;
     }
-
+    
+    .footer__top {
+        flex-direction: row;
+    }
+    
+    .footer__links {
+        flex-direction: row;
+        gap: 3rem;
+        padding-right: 6%;
+    }
 }
 
 
@@ -507,6 +516,9 @@ main {
     .nav {
         margin: 0 1rem;
         border-radius: 15px;
+    }
+    .footer {
+        border-radius: 15px 15px 0 0;
     }
     .hero__image-container {
         width: 80%;
