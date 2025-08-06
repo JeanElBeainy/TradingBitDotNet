@@ -18,6 +18,16 @@ body {
     overflow: hidden;
 }
 
+
+canvas {
+    display: block; /* Removes any default spacing below the canvas */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Places the canvas behind other content */
+}
+
+
 .container {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -80,6 +90,37 @@ body {
     border-color: white;
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    accent-color: white;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #cccccc;
+    cursor: pointer;
+    margin: 0;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.checkbox-group a {
+    color: white;
+    text-decoration: underline;
+}
+
+.checkbox-group a:hover {
+    text-decoration: none;
 }
 
 .btn {
@@ -145,7 +186,7 @@ body {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .container {
         margin: 20px;
         padding: 30px 25px;
