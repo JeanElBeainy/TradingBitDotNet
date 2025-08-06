@@ -187,3 +187,26 @@ canvas {
 .login-link a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+    .container {
+        margin: 20px;
+        padding: 10px 25px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-group input {
+        height: 45px;
+    }
+}
