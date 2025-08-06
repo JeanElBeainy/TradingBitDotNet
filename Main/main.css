@@ -175,6 +175,76 @@ main {
     animation: leftToRight 1.7s ease-in-out;
 }
 
+/* --- FLOATING BACKGROUND LOGOS --- */
+.floating-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.floating-element {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-component-border);
+}
+
+.floating-element svg {
+    width: 60%;
+    height: 60%;
+    filter: grayscale(100%) contrast(1.5);
+    opacity: 0.7;
+}
+
+.floating-element:nth-child(1) {
+    width:80px;
+    height: 80px; 
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+.floating-element:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.floating-element:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  top: 80%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.floating-element:nth-child(4) {
+  width: 90px;
+  height: 90px;
+  top: 22%;
+  right: 30%;
+  animation-delay: 1s;
+}
+
+.floating-element:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  top: 70%;
+  right: 40%;
+  animation-delay: 3s;
+}
+
 /* Arrow Section */
 .scroll-down-arrow {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
