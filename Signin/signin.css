@@ -81,3 +81,28 @@ body {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
