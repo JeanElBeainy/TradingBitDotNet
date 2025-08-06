@@ -124,3 +124,66 @@ canvas {
 .checkbox-group a:hover {
     text-decoration: none;
 }
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #ffffff, #f0f0f0);
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.divider {
+    text-align: center;
+    margin: 30px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.divider span {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0 15px;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
