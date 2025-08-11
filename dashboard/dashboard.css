@@ -151,3 +151,31 @@ ul {
         border-radius: 15px;
     }
 }
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem 0 1rem;
+    padding-top: 4rem;
+}
+
+.top__section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 1400px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+}
+
+.top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    max-width: 1200px;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
