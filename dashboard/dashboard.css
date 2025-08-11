@@ -161,11 +161,11 @@ main {
     padding-top: 4rem;
 }
 
-.top__section {
+section {
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 1400px;
+    width: 1500px;
     background-color: black;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(58, 58, 58);
@@ -178,5 +178,9 @@ main {
     justify-content: left;
     max-width: 1200px;
     padding: 1rem 1rem 1rem 2rem;
+}
+
+.table__section {
+    justify-content: center;
 }
 
