@@ -200,7 +200,12 @@ section {
     object-fit: fill;
 } */
 
-
+.table__section tr td:first-child img {
+    min-width: 32px;
+    min-height: 32px;
+    left: 0;
+    object-fit: fill;
+}
 
 .table__section tr td {
     font-size: 2rem;
