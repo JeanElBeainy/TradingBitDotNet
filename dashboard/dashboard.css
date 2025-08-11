@@ -161,7 +161,7 @@ main {
     padding-top: 4rem;
 }
 
-section {
+.top__section, .table__section {
     display: flex;
     align-items: center;
     justify-content: left;
@@ -181,6 +181,14 @@ section {
 }
 
 .table__section {
+    margin-top: 4rem;
     justify-content: center;
+    padding: 1rem 1rem 1rem 1rem;
+    overflow-x: auto;
+}
+
+.table__section tr td {
+    padding: 14px 12px;
+    vertical-align: middle;
 }
 
