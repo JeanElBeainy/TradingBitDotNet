@@ -228,7 +228,7 @@ section {
 
 @media screen and (max-width: 1300px) {
     .table__section tr td {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .table__section {
@@ -238,6 +238,10 @@ section {
 }
 
 @media screen and (max-width: 1050px) {
+    .table__section tr td {
+        font-size: 1.4rem;
+    }
+
     .table__section {
         padding: 4rem 0 0 0;
     }
