@@ -36,6 +36,14 @@
             </div>
             </div>
         </section>
+
+        <section>
+            <!-- Search Bar -->
+            <div class="search__container">
+                <input type="text" id="cryptoSearch" placeholder="Search crypto..." onkeyup="filterTable()">
+            </div>
+        </section>
+
         <section class="table__section">
             <div class="top__div">
                 <table>
@@ -181,5 +189,27 @@
             }
         });
     </script>
+
+    <script>
+        function filterTable() {
+            let input = document.getElementById("cryptoSearch");
+            let filter = input.value.toLowerCase();
+            let table = document.querySelector(".table__section table");
+            let tr = table.getElementsByTagName("tr");
+
+            for (let i = 1; i < tr.length; i++) {
+                let tds = tr[i].getElementsByTagName("td");
+                let found = false;
+                for (let td of tds) {
+                    if (td.textContent.toLowerCase().includes(filter)) {
+                        found = true;
+                        break;
+                    }
+                }
+                tr[i].style.display = found ? "" : "none";
+            }
+        }
+</script>
+
 </body>
 </html>

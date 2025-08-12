@@ -246,3 +246,33 @@ section {
         padding: 0;
     }
 }
+
+/* Search container styling */
+.search__container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 1500px;
+    width: 100%;
+}
+
+/* Search input styling */
+.search__container input {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    background-color: #111; /* dark background */
+    color: #fff; /* white text */
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+    transition: all 0.3s ease;
+}
+
+/* Input hover/focus effect */
+.search__container input:focus {
+    box-shadow: 0 0 15px rgb(100, 100, 100);
+}
