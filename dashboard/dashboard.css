@@ -369,7 +369,7 @@ th:nth-child(7), td:nth-child(7) { min-width: 110px;} /* Change */
     .footer__top {
         flex-direction: row;
     }
-    
+
     .footer__links {
         flex-direction: row;
         gap: 3rem;
