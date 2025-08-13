@@ -164,7 +164,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .swap__box {
@@ -173,7 +173,8 @@ ul {
     justify-content: center;
     flex-direction: column;
     width: 600px;
-    border-radius: 30px;
+    border-radius: 25px;
+    margin: 0 2rem 0 2rem;
     padding: 1.5rem .5rem 1.5rem .5rem;
     background-color: black;
 }
@@ -183,6 +184,7 @@ ul {
     width: 90%;
     align-items: left;
     justify-content: left;
+    padding: 1.5rem 0;
 
 }
 
@@ -192,16 +194,104 @@ ul {
     width: 90%;
 }
 
+.swap__from {
+    position: relative;
+}
+
+.swap__to {
+    padding-bottom: 2rem;
+}
+
 .swap__from input, .swap__to input {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    height: 55px;
     border: 1px solid var(--color-border);
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: var(--color-component-bg);
     color: var(--color-text-light);
     font-size: 1.6rem;
 }
 
+.swap__input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(15, 15, 15);
+    border: 3px solid #000000;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 150px; /* Height for approximately 3 items */
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-bottom: 3px solid #000000;
+    transition: background-color 0.2s;
+    font-size: 1.6rem;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-item:active {
+    background-color: #e9ecef;
+}
+
+/* Custom scrollbar styling */
+.dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdown-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.dropdown-list::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+.swap__arrow__line {
+    display: flex;
+    padding-top: 3rem;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.swap__arrow__line .line {
+    width: 90%;
+    height: 3px;
+    background-color: var(--color-border);
+}
 
 
 /* --- FOOTER --- */

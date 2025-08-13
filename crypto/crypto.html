@@ -31,12 +31,27 @@
                 <div class="from__text">
                     <p>From</p>
                 </div>
+
                 <div class="swap__from">
-                    <input type="text" class="swap__input" placeholder="Search your portfolio">
+                    <input type="text" id="cryptoSearch" class="swap__input" placeholder="Search your portfolio">
+                    <div id="dropdownList" class="dropdown-list">
+                        <div class="dropdown-item" onclick="selectCrypto('BTC')">Bitcoin (BTC)</div>
+                        <div class="dropdown-item" onclick="selectCrypto('ETH')">Ethereum (ETH)</div>
+                        <div class="dropdown-item" onclick="selectCrypto('ADA')">Cardano (ADA)</div>
+                        <div class="dropdown-item" onclick="selectCrypto('XRP')">XRP (XRP)</div>
+                        <div class="dropdown-item" onclick="selectCrypto('DOGE')">Dogecoin (DOGE)</div>
+                        <div class="dropdown-item" onclick="selectCrypto('SOL')">Solana (SOL)</div>
+                        <div class="dropdown-item" onclick="selectCrypto()">Polkadot (DOT)</div>
+                        <div class="dropdown-item" onclick="selectCrypto()">Polygon (MATIC)</div>
+                        <div class="dropdown-item" onclick="selectCrypto()">Litecoin (LTC)</div>
+                        <div class="dropdown-item" onclick="selectCrypto()">Binance Coin (BNB)</div>
+                    </div>
                 </div>
 
                 <div class="swap__arrow__line">
-                    
+                    <div class="line">
+                        <div class="arrow"></div>
+                    </div>
                 </div>
 
                 <div class="to__text">
@@ -71,6 +86,43 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const searchInput = document.getElementById('cryptoSearch');
+        const dropdownList = document.getElementById('dropdownList');
+        
+        searchInput.addEventListener('click', () => {
+            dropdownList.style.display = 'block';
+            const items = dropdownList.getElementsByClassName('dropdown-item');
+            for (let item of items) {
+                item.style.display = 'block';
+            }
+        });
+        
+        document.addEventListener('click', (event) => {
+            if (!event.target.closest('.swap__from')) {
+                dropdownList.style.display = 'none';
+            }
+        });
+        
+        searchInput.addEventListener('input', () => {
+            const filter = searchInput.value.toLowerCase();
+            const items = dropdownList.getElementsByClassName('dropdown-item');
+            
+            for (let item of items) {
+                const text = item.innerText.toLowerCase();
+                if(text.includes(filter))
+                    item.style.display = 'block';
+                else
+                    item.style.display = 'none';
+            }
+        });
+        
+        function selectCrypto() {            
+            searchInput.value = event.target.innerText;
+            dropdownList.style.display = 'none';
+        }
+    </script>
 
     <script>
         const collapsibles = document.querySelectorAll(".collapsible");
