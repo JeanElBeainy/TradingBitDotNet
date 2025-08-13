@@ -303,8 +303,27 @@ ul {
     height: 40px;
 }
 
+.info__container {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+}
 
+.slippage__container {
+    display: flex;
+    width: 20%;
+    margin-top: 1rem;
+}
 
+.slippage__box {
+    display: flex;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    background-color: #1a1a1a;
+}
 
 
 
