@@ -160,8 +160,47 @@ ul {
 }
 
 
+.swap__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
 
+.swap__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 30px;
+    padding: 1.5rem .5rem 1.5rem .5rem;
+    background-color: black;
+}
 
+.from__text, .to__text {
+    display: flex;
+    width: 90%;
+    align-items: left;
+    justify-content: left;
+
+}
+
+.swap__from, .swap__to {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.swap__from input, .swap__to input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background-color: var(--color-component-bg);
+    color: var(--color-text-light);
+    font-size: 1.6rem;
+}
 
 
 
