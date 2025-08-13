@@ -164,7 +164,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10rem;
+    margin: 15rem 0 15rem 0;
 }
 
 .swap__box {
@@ -312,7 +312,7 @@ ul {
 
 .slippage__container, .fee__container {
     display: flex;
-    width: 130px;
+    width: 150px;
     margin-top: 1rem;
 }
 
@@ -324,6 +324,10 @@ ul {
     border-radius: 5px;
     margin-left: 0.5rem;
     background-color: #1a1a1a;
+}
+
+.fee__box:last-child {
+    width: 40px;
 }
 
 .slippage__box {
