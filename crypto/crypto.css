@@ -366,6 +366,24 @@ ul {
 
 /*SWAP HISTORY*/
 
+.history__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.history__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 25px;
+    margin: 0 2rem 0 2rem;
+    padding: 1.5rem .5rem 1.5rem .5rem;
+    background-color: black;
+}
 
 
 /* --- FOOTER --- */
