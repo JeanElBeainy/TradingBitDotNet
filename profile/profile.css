@@ -259,9 +259,135 @@ ul {
     background-color: #e9ecef;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1rem 0 1rem;
+    padding-top: 4rem;
+}
 
+.user__info p {
+    font-size: 2rem;
+}
 
+.top__div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 1600px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0 1rem 2.5rem 1rem;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+}
 
+.top__container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.history-card {
+    width: 100%;
+    max-width: 850px;
+    background-color: #000;
+    border: 1px solid var(--color-component-border);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 212, 255, 0.1);
+}
+
+.history-card__group {
+    display: grid;
+    gap: 2rem;
+}
+
+.history-card__group--primary {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.history-card__group--secondary {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.history-card__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-card__label {
+    color: var(--color-text);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.history-card__value {
+    color: var(--color-text-light);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.history-card__value--pair {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.trade-arrow {
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.history-card__value--quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history-card__value--price {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .history-card {
+        padding: 1.5rem;
+    }
+
+    .history-card__group--primary,
+    .history-card__group--secondary {
+        grid-template-columns: 1fr;
+    }
+
+    .history-card__group--primary {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 2rem;
+    }
+
+    .history-card__value--pair {
+        font-size: 1.6rem;
+    }
+}
 
 
 
