@@ -404,6 +404,11 @@ ul {
     font-weight: 600;
 }
 
+@media screen and (max-width: 500px) {
+    .swap__history {
+        font-size: 1.5rem;
+    }
+}
 
 /* --- FOOTER --- */
 .footer {
