@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
@@ -25,10 +25,10 @@ body {
     flex-direction: column;
     background-color: var(--color-body-bg);
     font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 1.6rem; /* Default font size */
+    font-size: 1.6rem;
     line-height: 1.6;
     color: var(--color-text);
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: hidden;
 }
 
 main {
@@ -120,11 +120,10 @@ ul {
 }
 
 .collapsible--expanded .collapsible__content {
-    max-height: 100vh; /* Large value to ensure it opens fully */
+    max-height: 100vh;
     opacity: 1;
 }
 
-/* Tablet and larger */
 @media screen and (min-width: 768px) {
     .nav__toggler {
         display: none;
@@ -144,14 +143,12 @@ ul {
     }
 }
 
-/* Small desktop and larger */
 @media screen and (min-width: 992px) {
     .nav__item {
         padding: 1rem 2rem;
     }
 }
 
-/* Mobile specific adjustments */
 @media screen and (max-width: 767px) {
     .nav {
         margin: 0 1rem;
@@ -232,7 +229,7 @@ ul {
     border: 3px solid #000000;
     border-top: none;
     border-radius: 0 0 8px 8px;
-    max-height: 150px; /* Height for approximately 3 items */
+    max-height: 150px;
     overflow-y: auto;
     display: none;
     z-index: 1000;
@@ -325,9 +322,13 @@ section {
     box-shadow: 0 8px 30px rgba(0, 212, 255, 0.1);
 }
 
+.text__history__section {
+    padding: 2rem 0 0 1rem;
+}
+
 .history-card__group {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .history-card__group--primary {
@@ -408,7 +409,6 @@ section {
     }
 }
 
-/* --- FOOTER --- */
 .footer {
     background-color: black;
     border-top: 2px solid var(--color-border);
@@ -491,5 +491,138 @@ section {
 @media screen and (max-width: 767px) {
     .footer {
         border-radius: 15px 15px 0 0;
+    }
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem 0rem 1rem;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: #000;
+    border: 1px solid var(--color-component-border);
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.profile-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.profile-card__name {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.profile-card__role {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    background-color: rgba(0, 212, 255, 0.1);
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.profile-card__total-volume {
+    text-align: right;
+}
+
+.profile-card__main-balance {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.profile-card__main-balance .label {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card__main-balance .value {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    line-height: 1.1;
+}
+
+.profile-card__sub-balances {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.balance-item {
+    background-color: var(--color-component-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.balance-item:hover {
+    border-color: var(--color-primary);
+}
+
+.label {
+    font-size: 1.4rem;
+    color: var(--color-text);
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.value {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 2rem;
+    }
+
+    .profile-card__name {
+        font-size: 2rem;
+    }
+
+    .profile-card__main-balance {
+        padding: 1rem 0;
+    }
+
+    .profile-card__main-balance .value {
+        font-size: 2.4rem;
+    }
+    
+    .profile-card__sub-balances {
+        gap: 1rem;
+    }
+
+    .value {
+        font-size: 2rem;
+    }
+
+    .balance-item {
+        padding: .5rem;
     }
 }
